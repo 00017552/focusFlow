@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Contacts</title>
+        <!-- general styles -->
+        <link
+            rel="stylesheet"
+            href="styles/index.css" />
+        <!-- home page styles -->
+        <link
+            rel="stylesheet"
+            href="styles/contacts.css" />
+        <!-- fonts -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kite+One&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <!-- header and footer are the same for all pages -->
+        <header>
+            <img src="./assets/logo.svg"  alt="logo"/>
+            <button
+                class="nav-btn"
+                id="off"
+                onclick="{navOn()}">
+                <img src="./assets/navOn.svg" alt="navigation open"/>
+            </button>
+            <button
+                class="nav-btn"
+                id="on"
+                onclick="{navOff()}">
+                <img src="./assets/navOff.svg" alt="navigation close"/>
+            </button>
+            <nav role="navigation">
+                <ul>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./home.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./about.html"
+                            >About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./resources.html"
+                            >Resources</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./demo.html"
+                            >Demo</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./pricing.html"
+                            >Pricing</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links active"
+                            href="./contacts.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <section>
+                    <h1>Find Us</h1>
+                    <div>
+                        <h2>Address</h2>
+                        <address>
+                            1A Tallimarjan Street Mirabad District Tashkent Uzbekistan
+                        </address>
+                        <hr />
+                        <h2>Hours</h2>
+                        <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
+                        <p>Saturday: 10:00 AM - 4:00 PM</p>
+                        <hr />
+                        <h2>Phone</h2>
+                        <p>+998 97 123 45 67</p>
+                        <p>+998 97 765 43 21</p>
+                        <hr />
+                        <h2>Email</h2>
+                        <p>support@genzgrow.com</p>
+                        <p>official@genzgrow.com</p>
+                        <hr />
+                        <h2>Map</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1430.9155023598385!2d69.3035873467139!3d41.277692225223205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38aef55be1cd2fb3%3A0x9061639023ff74b!2sTalimarjon%20Street%201%2C%20Tashkent%2C%20Uzbekistan!5e0!3m2!1sen!2s!4v1733057759520!5m2!1sen!2s"
+                            width="600"
+                            height="450"
+                            style="border: 0"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </section>
+                <section>
+                    <h1>Write to Us</h1>
+                    <form
+                        action="messages-server.js"
+                        method="post"
+                        id="contactForm">
+                        <div
+                            class="error"
+                            id="messageError"></div>
+                        <textarea
+                            name="message"
+                            id="message"
+                            cols="30"
+                            rows="10"
+                            placeholder="Type your ideas into action..."></textarea>
+
+                        <div
+                            class="error"
+                            id="nameError"></div>
+                        <label for="name">Name</label>
+                        <input
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="John Doe " />
+
+                        <div
+                            class="error"
+                            id="emailError"></div>
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            placeholder="johndoe@example.com" />
+                        <button type="submit">Send</button>
+                    </form>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <section>
+                <h3>About Our Products</h3>
+                <p>
+                    At GenZGrow (GZG), we are proud to present FocusFlow, our innovative package of
+                    tools designed to enhance time management and boost productivity. We’re
+                    committed to empowering individuals to achieve their goals.
+                </p>
+            </section>
+            <section>
+                <h3>Quick Links</h3>
+                <nav role="navigation">
+                    <ul>
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="./demo.html">Demo</a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h3>Contact Us</h3>
+                <p>Email: support@genzgrow.com</p>
+                <p>Phone: +998 97 123 45 67</p>
+                <p>Location: 1A Tallimarjan Str Tashkent Uzbekistan</p>
+            </section>
+            <section>
+                <h4>
+                    This website was created to fulfill the Web Technology module’s requirements and
+                    does not represent an actual company or service.
+                </h4>
+            </section>
+            <section>
+                <h4>© 2024 GenZGrow (GZG). All rights reserved.</h4>
+            </section>
+        </footer>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/validate.js"></script>
+    </body>
+</html>

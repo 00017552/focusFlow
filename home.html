@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Home</title>
+        <!-- general styles -->
+        <link
+            rel="stylesheet"
+            href="styles/index.css" />
+        <!-- home page styles -->
+        <link
+            rel="stylesheet"
+            href="styles/home.css" />
+        <!-- fonts -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kite+One&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <!-- header and footer are the same for all pages -->
+        <header>
+            <img src="./assets/logo.svg" alt="logo" />
+            <button
+                class="nav-btn"
+                id="off"
+                onclick="{navOn()}">
+                <img src="./assets/navOn.svg" alt="navigation open" />
+            </button>
+            <button
+                class="nav-btn"
+                id="on"
+                onclick="{navOff()}">
+                <img src="./assets/navOff.svg" alt="navigation close"/>
+            </button>
+            <nav role="navigation">
+                <ul>
+                    <li>
+                        <a
+                            class="nav-links active"
+                            href="./home.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./about.html"
+                            >About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./resources.html"
+                            >Resources</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./pricing.html"
+                            >Demo</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./pricing.html"
+                            >Pricing</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./contacts.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <div>
+                    <h1>
+                        Focus on
+                        <span>Big Goals</span>
+                        <span>Productivity</span>
+                        <span>Balance</span>
+                        <span>Progress</span>
+                    </h1>
+                </div>
+                <button id="startWithUs"><a href="pricing.html">Start with us</a></button>
+            </section>
+            <section class="images" id="startHere">
+                <a href="/home.html#startHere" style="text-decoration: none"><h2>Start from here <img alt="next" src="./assets/navigate_next.svg"/></h2></a>
+            </section>
+            <section  class="images">
+                <div>
+                    <img src="./assets/productivity clock.jpg" alt="clock" />
+                    <img  class="colored" src="./assets/clock2.jpg" alt="clock"/>
+                    <img src="./assets/productivity clock.jpg" alt="clock" />
+                </div>
+                <h2>Need help with productivity? You’ve come to the right place...</h2>
+            </section>
+            <section class="images">
+                <h2>
+                    ...to achieve your health goals and stay on track with focused habits and
+                    routines...
+                </h2>
+                <div>
+                    <img src="./assets/gym.jpg" alt="gym"/>
+                    <img class="colored" src="./assets/gym2.jpg" alt="gym"/>
+                    <img src="./assets/gym.jpg" a;t="gym"/>
+                </div>
+            </section>
+            <section class="images">
+                <div>
+                    <img src="./assets/study.jpg" alt="study"/>
+                    <img class="colored" src="./assets/study2.jpg" alt="study"/>
+                    <img src="./assets/study.jpg" alt="study"/>
+                </div>
+                <h2>
+                    ...or boost your studies, stay organized, and manage your time effectively...
+                </h2>
+            </section>
+            <section class="images">
+                <h2>...or just find balance in your life and create a space for inner peace.</h2>
+                <button id="startWithUs2"><a href="pricing.html">Start with us</a></button>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <h3>About Our Products</h3>
+                <p>
+                    At GenZGrow (GZG), we are proud to present FocusFlow, our innovative package of
+                    tools designed to enhance time management and boost productivity. We’re
+                    committed to empowering individuals to achieve their goals.
+                </p>
+            </section>
+            <section>
+                <h3>Quick Links</h3>
+                <nav role="navigation">
+                    <ul>
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="./demo.html">Demo</a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h3>Contact Us</h3>
+                <p>Email: support@genzgrow.com</p>
+                <p>Phone: +998 97 123 45 67</p>
+                <p>Location: 1A Tallimarjan Str Tashkent Uzbekistan</p>
+            </section>
+            <section>
+                <h4>
+                    This website was created to fulfill the Web Technology module’s requirements and
+                    does not represent an actual company or service.
+                </h4>
+            </section>
+            <section>
+                <h4>© 2024 GenZGrow (GZG). All rights reserved.</h4>
+            </section>
+        </footer>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>

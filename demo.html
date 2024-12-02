@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Demo</title>
+        <!-- general styles -->
+        <link
+            rel="stylesheet"
+            href="styles/index.css" />
+        <!-- home page styles -->
+        <link
+            rel="stylesheet"
+            href="styles/demo.css" />
+        <!-- fonts -->
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com" />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Kite+One&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <!-- header and footer are the same for all pages -->
+        <header>
+            <img src="./assets/logo.svg" alt="logo"/>
+            <button
+                class="nav-btn"
+                id="off"
+                onclick="{navOn()}">
+                <img src="./assets/navOn.svg" alt="navigation open" />
+            </button>
+            <button
+                class="nav-btn"
+                id="on"
+                onclick="{navOff()}">
+                <img src="./assets/navOff.svg" alt="navigation close"/>
+            </button>
+            <nav role="navigation">
+                <ul>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./home.html"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./about.html"
+                            >About Us</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./resources.html"
+                            >Resources</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links active"
+                            href="./demo.html"
+                            >Demo</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./pricing.html"
+                            >Pricing</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            class="nav-links"
+                            href="./contacts.html"
+                            >Contact Us</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h1>See What FocusFlow Can Do for You</h1>
+                <p>
+                    Discover how our products can transform your productivity. Try our demo to
+                    experience innovative tools designed to help you stay organized, achieve your
+                    goals, and make the most of your time. Get a hands-on feel for how FocusFlow can
+                    help you thrive in your personal and professional life.
+                </p>
+            </section>
+            <section class="products">
+                <div id="todo">
+                    <img src="assets/note.svg" alt="note"/>
+                    <ul>
+                        <li
+                            class="todo"
+                            id="1">
+                            <h3>Example todo</h3>
+                            <button onclick="deleteTodo(id)">
+                                <img src="assets/delete.svg" alt="delete" />
+                            </button>
+                        </li>
+                    </ul>
+                    <div>
+                        <input
+                            type="text"
+                            id="todoInput"
+                            onkeydown="if (event.key === 'Enter') addTodo()"
+                            placeholder="Add a new todo..." />
+                        <button onclick="addTodo()"><img src="assets/add_circle.svg" alt="add button" /></button>
+                    </div>
+                </div>
+                <h2>
+                    Stay on top of your tasks with a simple yet powerful to-do list that helps you
+                    prioritize and accomplish your daily goals.
+                </h2>
+            </section>
+            <section class="products">
+                <div id="habitTracker">
+                    <img src="assets/habitTracker.svg" alt="habit tracker"/>
+                    <h3>2024</h3>
+                    <h4>December</h4>
+                    <table id="calendar">
+                        <thead>
+                            <tr>
+                                <th>Sun</th>
+                                <th>Mon</th>
+                                <th>Tue</th>
+                                <th>Wed</th>
+                                <th>Thu</th>
+                                <th>Fri</th>
+                                <th>Sat</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- days will be created by JavaScript -->
+                        </tbody>
+                    </table>
+                    <h4><span id="day">0</span> of 31 days completed</h4>
+                </div>
+                <h2>
+                    Build positive habits effortlessly with our intuitive habit tracker, designed to
+                    help you stay consistent and achieve your goals.
+                </h2>
+            </section>
+            <section class="products">
+                <div id="music">
+                    <img src="assets/musicCirlce.svg" alt="music circle"/>
+                    <audio id="audioPlayer">
+                        <source
+                            src="assets/music/music1.mp3"
+                            type="audio/mpeg" />
+                    </audio>
+                    <div>
+                        <button
+                            id="prev"
+                            onclick="prev()">
+                            <img src="assets/Previous.svg" alt="previous" />
+                        </button>
+                        <button
+                            id="play"
+                            onclick="play()">
+                            <img src="assets/Play.svg" alt="play"/>
+                        </button>
+                        <button
+                            id="pause"
+                            onclick="pause()"
+                            style="display: none">
+                            <img src="assets/Pause.svg" alt="pause"/>
+                        </button>
+                        <button
+                            id="next"
+                            onclick="next()">
+                            <img src="assets/Next.svg" alt="next"/>
+                        </button>
+                    </div>
+                </div>
+                <h2>
+                    Immerse yourself in a selection of focus-enhancing music, handpicked to boost
+                    your productivity and keep you in the zone.
+                </h2>
+            </section>
+            <section class="products">
+                <div id="timer">
+                    <img src="assets/Timer.svg" alt="timer"/>
+                    <div>
+                        <h3 id="time">00:00</h3>
+                        <input
+                            type="number"
+                            id="timerInput"
+                            value="25"
+                            min="1"
+                            placeholder="Minutes" />
+                        <div id="controls">
+                            <button onclick="stop()"><img src="assets/Stop.svg" alt="stop"/></button>
+                            <button onclick="start()"><img src="assets/Play.svg" alt="play"/></button>
+                            <button onclick="refresh()">
+                                <img src="assets/Arrow Refresh 04.svg" alt="refresh"/>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <h2>
+                    Maximize your focus sessions with our customizable timer, perfect for deep work
+                    or Pomodoro-style productivity.
+                </h2>
+            </section>
+            <section class="products">
+                <div id="notes">
+                    <img src="assets/notes.svg" alt="notes"/>
+                    <div>
+                        <button
+                            onclick="change('#48E5FF')"
+                            style="background-color: #48e5ff"></button>
+                        <button
+                            onclick="change('#f851f5')"
+                            style="background-color: #f851f5"></button>
+                        <button
+                            onclick="change('#4B2CFF')"
+                            style="background-color: #4b2cff"></button>
+                        <button
+                            onclick="change('#68FFA2')"
+                            style="background-color: #68ffa2"></button>
+                        <button
+                            onclick="change('#FFF36F')"
+                            style="background-color: #fff36f"></button>
+                        <button
+                            onclick="change('#FFFFFF')"
+                            style="background-color: #ffffff"></button>
+                        <button
+                            onclick="deleteNotes()"
+                            style="background-color: transparent; border:solid 1px #000">X</button>
+                    </div>
+                    <textarea
+                        id="noteInput"
+                        placeholder="...I hate it here so I will go to 
+secret gardens in my mind
+People need a key to get to
+The only one is mine
+I read about it in a book when I was a precocious child
+No mid-sized city hopes and small town fears
+I'm there most of the year
+Cause I hate it here..."
+                        rows="25"></textarea>
+                </div>
+                <h2>
+                    Capture your thoughts, ideas, and reflections in a dedicated space to help you
+                    stay organized and inspired.
+                </h2>
+            </section>
+        </main>
+        <footer>
+            <section>
+                <h3>About Our Products</h3>
+                <p>
+                    At GenZGrow (GZG), we are proud to present FocusFlow, our innovative package of
+                    tools designed to enhance time management and boost productivity. We’re
+                    committed to empowering individuals to achieve their goals.
+                </p>
+            </section>
+            <section>
+                <h3>Quick Links</h3>
+                <nav role="navigation">
+                    <ul>
+                        <li>
+                            <a href="./home.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./about.html">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./products.html">Products</a>
+                        </li>
+                        <li>
+                            <a href="./demo.html">Demo</a>
+                        </li>
+                        <li>
+                            <a href="./pricing.html">Pricing</a>
+                        </li>
+                        <li>
+                            <a href="./contacts.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+            <section>
+                <h3>Contact Us</h3>
+                <p>Email: support@genzgrow.com</p>
+                <p>Phone: +998 97 123 45 67</p>
+                <p>Location: 1A Tallimarjan Str Tashkent Uzbekistan</p>
+            </section>
+            <section>
+                <h4>
+                    This website was created to fulfill the Web Technology module’s requirements and
+                    does not represent an actual company or service.
+                </h4>
+            </section>
+            <section>
+                <h4>© 2024 GenZGrow (GZG). All rights reserved.</h4>
+            </section>
+        </footer>
+        <script src="scripts/index.js"></script>
+        <script src="scripts/habitTracker.js"></script>
+        <script src="scripts/todo.js"></script>
+        <script src="scripts/music.js"></script>
+        <script src="scripts/timer.js"></script>
+        <script src="scripts/notes.js"></script>
+    </body>
+</html>
