@@ -212,6 +212,7 @@ footer {
     padding-left: 50px;
     padding-right: 40px;
     width: 100%;
+    line-height: 20px;
 }
 footer section {
     text-align: start;

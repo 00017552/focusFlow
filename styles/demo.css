@@ -22,11 +22,11 @@ main section:first-child h1 {
 main section:first-child p {
     color: #fff;
     font-family: 'Kite One', sans-serif;
-    font-size: 18px;
     margin: 0 120px;
     text-align: center;
     margin-bottom: 30px;
     line-height: 30px;
+    font-size: 1.4em;
 }
 
 .products {

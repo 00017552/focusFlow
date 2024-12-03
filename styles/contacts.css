@@ -18,7 +18,7 @@ main div section > h1 {
     color: #48e5ff;
     width: 100%;
     text-align: center;
-    font-size: 28px;
+    font-size: 2em;
     margin-bottom: 20px;
     font-weight: 200;
 }
@@ -30,7 +30,7 @@ main div section h1:first-child {
 }
 main div section div {
     color: white;
-    font-size: 12px;
+    font-size: 16px;
     font-family: 'Irina Sans', sans-serif;
     font-style: normal;
     font-weight: 100;
@@ -48,7 +48,7 @@ hr {
     border: none;
 }
 main div section div h2 {
-    font-size: 23px;
+    font-size: 1.5em;
     font-weight: 100;
     font-style: normal;
 }
@@ -109,10 +109,10 @@ form button {
         width: 100%;
     }
     main div section > h1 {
-        font-size: 20px;
+        font-size: 2em;
     }
     main div section div h2 {
-        font-size: 20px;
+        font-size: 1.7em;
     }
     form button {
         width: 100%;
