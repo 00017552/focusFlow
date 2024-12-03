@@ -328,4 +328,8 @@ table td:hover {
       background-size:100px;
       background-position: 90% 0;
     }
+    .products>div img{
+        right:-80%;
+        margin-bottom: 10px;
+    }
 }

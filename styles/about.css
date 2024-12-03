@@ -27,7 +27,6 @@ main section img {
     filter: grayscale(100%);
 
 }
-/* TODO:make it visible */
 .fullImages::before {
     content: '';
     display: block;

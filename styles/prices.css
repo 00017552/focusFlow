@@ -21,7 +21,7 @@ main section {
     align-items: center;
     background-color: #353434e3;
     width: 90%;
-    height: 450px;
+    height: 550px;
     border-radius: 30px;
     padding: 0 20px;
     transition: transform 0.3s ease-in-out;
@@ -118,6 +118,7 @@ main section:last-child button:hover {
     main section {
         width: 100%;
         margin: 0;
+        height:450px;
     }
     main section h1 {
         margin-top: 10px;

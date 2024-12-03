@@ -6,7 +6,7 @@ function check() {
         onButton.style.display = 'none';
         offButton.style.display = 'none';
         nav.style.display = 'flex';
-    }else{
+    } else {
         onButton.style.display = 'none';
         offButton.style.display = 'block';
         nav.style.display = 'none';
