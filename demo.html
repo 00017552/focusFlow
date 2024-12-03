@@ -29,19 +29,25 @@
     <body>
         <!-- header and footer are the same for all pages -->
         <header>
-            <img src="./assets/logo.svg" alt="logo"/>
+            <img
+                src="./assets/logo.svg"
+                alt="logo" />
             <button
                 class="nav-btn"
                 id="off"
                 onclick="{navOn()}">
-                <img src="./assets/navOn.svg" alt="navigation open" />
+                <img
+                    src="./assets/navOn.svg"
+                    alt="navigation open" />
             </button>
             <button
                 class="nav-btn"
                 id="on"
                 onclick="{navOff()}"
                 aria-hidden="true">
-                <img src="./assets/navOff.svg" alt="navigation close"/>
+                <img
+                    src="./assets/navOff.svg"
+                    alt="navigation close" />
             </button>
             <nav role="navigation">
                 <ul>
@@ -102,14 +108,18 @@
             </section>
             <section class="products">
                 <div id="todo">
-                    <img src="assets/note.svg" alt="note"/>
+                    <img
+                        src="assets/note.svg"
+                        alt="note" />
                     <ul>
                         <li
                             class="todo"
                             id="1">
                             <h3>Example todo</h3>
                             <button onclick="deleteTodo(id)">
-                                <img src="assets/delete.svg" alt="delete" />
+                                <img
+                                    src="assets/delete.svg"
+                                    alt="delete" />
                             </button>
                         </li>
                     </ul>
@@ -119,7 +129,11 @@
                             id="todoInput"
                             onkeydown="if (event.key === 'Enter') addTodo()"
                             placeholder="Add a new todo..." />
-                        <button onclick="addTodo()"><img src="assets/add_circle.svg" alt="add button" /></button>
+                        <button onclick="addTodo()">
+                            <img
+                                src="assets/add_circle.svg"
+                                alt="add button" />
+                        </button>
                     </div>
                 </div>
                 <h2>
@@ -129,7 +143,9 @@
             </section>
             <section class="products">
                 <div id="habitTracker">
-                    <img src="assets/habitTracker.svg" alt="habit tracker"/>
+                    <img
+                        src="assets/habitTracker.svg"
+                        alt="habit tracker" />
                     <h3>2024</h3>
                     <h4>December</h4>
                     <table id="calendar">
@@ -157,7 +173,9 @@
             </section>
             <section class="products">
                 <div id="music">
-                    <img src="assets/musicCirlce.svg" alt="music circle"/>
+                    <img
+                        src="assets/musicCirlce.svg"
+                        alt="music circle" />
                     <audio id="audioPlayer">
                         <source
                             src="assets/music/music1.mp3"
@@ -167,23 +185,31 @@
                         <button
                             id="prev"
                             onclick="prev()">
-                            <img src="assets/Previous.svg" alt="previous" />
+                            <img
+                                src="assets/Previous.svg"
+                                alt="previous" />
                         </button>
                         <button
                             id="play"
                             onclick="play()">
-                            <img src="assets/Play.svg" alt="play"/>
+                            <img
+                                src="assets/Play.svg"
+                                alt="play" />
                         </button>
                         <button
                             id="pause"
                             onclick="pause()"
                             style="display: none">
-                            <img src="assets/Pause.svg" alt="pause"/>
+                            <img
+                                src="assets/Pause.svg"
+                                alt="pause" />
                         </button>
                         <button
                             id="next"
                             onclick="next()">
-                            <img src="assets/Next.svg" alt="next"/>
+                            <img
+                                src="assets/Next.svg"
+                                alt="next" />
                         </button>
                     </div>
                 </div>
@@ -194,7 +220,9 @@
             </section>
             <section class="products">
                 <div id="timer">
-                    <img src="assets/Timer.svg" alt="timer"/>
+                    <img
+                        src="assets/Timer.svg"
+                        alt="timer" />
                     <div>
                         <h3 id="time">00:00</h3>
                         <input
@@ -204,10 +232,20 @@
                             min="1"
                             placeholder="Minutes" />
                         <div id="controls">
-                            <button onclick="stop()"><img src="assets/Stop.svg" alt="stop"/></button>
-                            <button onclick="start()"><img src="assets/Play.svg" alt="play"/></button>
+                            <button onclick="stop()">
+                                <img
+                                    src="assets/Stop.svg"
+                                    alt="stop" />
+                            </button>
+                            <button onclick="start()">
+                                <img
+                                    src="assets/Play.svg"
+                                    alt="play" />
+                            </button>
                             <button onclick="refresh()">
-                                <img src="assets/Arrow Refresh 04.svg" alt="refresh"/>
+                                <img
+                                    src="assets/Arrow Refresh 04.svg"
+                                    alt="refresh" />
                             </button>
                         </div>
                     </div>
@@ -219,7 +257,9 @@
             </section>
             <section class="products">
                 <div id="notes">
-                    <img src="assets/notes.svg" alt="notes"/>
+                    <img
+                        src="assets/notes.svg"
+                        alt="notes" />
                     <div>
                         <button
                             onclick="change('#48E5FF')"
@@ -241,7 +281,9 @@
                             style="background-color: #ffffff"></button>
                         <button
                             onclick="deleteNotes()"
-                            style="background-color: transparent; border:solid 1px #000">X</button>
+                            style="background-color: transparent; border: solid 1px #000">
+                            X
+                        </button>
                     </div>
                     <textarea
                         id="noteInput"

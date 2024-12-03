@@ -295,9 +295,9 @@ table td:hover {
 }
 #notes textarea::placeholder {
     color: rgb(211, 161, 240);
-    background-image: url("../assets/flower.png");
+    background-image: url('../assets/flower.png');
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: 400px 10px;
 }
 #notes textarea:focus,
@@ -314,7 +314,7 @@ table td:hover {
         width: 100vw;
         padding: 0 20px;
     }
-     main section:first-child h1 {
+    main section:first-child h1 {
         grid-column: span 1;
         text-align: center;
         height: 30px;
@@ -324,12 +324,12 @@ table td:hover {
         margin: 0 20px;
         font-size: 15px;
     }
-    #notes textarea::placeholder{
-      background-size:100px;
-      background-position: 90% 0;
+    #notes textarea::placeholder {
+        background-size: 100px;
+        background-position: 90% 0;
     }
-    .products>div img{
-        right:-80%;
+    .products > div img {
+        right: -80%;
         margin-bottom: 10px;
     }
 }

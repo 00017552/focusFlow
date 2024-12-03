@@ -1,4 +1,3 @@
-
 main {
     background-image: url('../assets/starsContacts.png');
     background-size: contain;
@@ -15,18 +14,18 @@ main > div {
     border-radius: 50px;
     padding: 20px;
 }
-main div section>h1 {
+main div section > h1 {
     color: #48e5ff;
     width: 100%;
     text-align: center;
     font-size: 28px;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     font-weight: 200;
 }
-main div section{
+main div section {
     width: 45%;
 }
-main div section h1:first-child{
+main div section h1:first-child {
     margin-top: 20px;
 }
 main div section div {
@@ -44,11 +43,11 @@ main div section div {
 }
 hr {
     width: 100%;
-    height: .0789px;
+    height: 0.0789px;
     background-color: #353434;
     border: none;
 }
-main div section div h2{
+main div section div h2 {
     font-size: 23px;
     font-weight: 100;
     font-style: normal;
@@ -59,66 +58,67 @@ iframe {
     height: auto;
 }
 
-form{
+form {
     display: flex;
     flex-direction: column;
     row-gap: 5px;
     width: 100%;
 }
-form label{
-    color:white;
+form label {
+    color: white;
     font-size: 12px;
     margin: 0;
     padding: 0;
 }
 
-form input, form textarea{
+form input,
+form textarea {
     padding: 10px;
     border-radius: 10px;
     border: none;
     background-color: #1e1e1e;
     color: white;
-    border:solid 2px #353434
+    border: solid 2px #353434;
 }
-form button{
+form button {
     background-color: #48e5ff;
     border: none;
     border-radius: 10px;
-    padding:0;
+    padding: 0;
     margin: 10px 0;
     width: 100%;
-    min-width:min-content;
+    min-width: min-content;
     height: 30px;
 }
-.error{
+.error {
     color: red;
     font-size: 14px;
     font-weight: 100;
     margin: 0;
     padding: 0;
     font-style: normal;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
-@media screen and (max-width: 1020px){
+@media screen and (max-width: 1020px) {
     main div {
         flex-direction: column;
         align-items: center;
         margin: 50px 20px;
     }
-    main div section{
+    main div section {
         width: 100%;
     }
-    main div section>h1 {
+    main div section > h1 {
         font-size: 20px;
     }
-    main div section div h2{
+    main div section div h2 {
         font-size: 20px;
     }
-    form button{
+    form button {
         width: 100%;
     }
-    form input, form textarea{
+    form input,
+    form textarea {
         width: 100%;
     }
-    
 }
